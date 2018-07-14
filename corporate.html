@@ -60,7 +60,7 @@ function validate() {
 </nav>
 
   <main class="pa4 black-80">
-  <form class="measure center" name ="myform" target="_self" action="home.html" method="get"  onsubmit="validate()">
+  <form class="measure center" name ="myform" action="corporate.php" method="post"  onsubmit="validate()">
     <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
       <!-- <legend class="f4 fw6 ph0 mh0">Registration Form</legend>
       <hr> -->
@@ -71,10 +71,6 @@ function validate() {
       <div class="mt3">
         <label class="db fw6 lh-copy f6" for="email-address"><h5>Positions</h5></label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="position" re id="address" required=" ">
-      </div>
-      <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address"><h5>Cut Of Marks</h5></label>
-        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="number" name="cutoff" re id="" required="">
       </div>
       <div class="mt3">
         <label class="db fw6 lh-copy f6" for="email-address"><h5>SkillSet</h5></label>
@@ -88,9 +84,14 @@ function validate() {
         <label class="db fw6 lh-copy f6" for="email-address"><h5>Location</h5></label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="location" re id="address" required="">
       </div>
+	  </div>
+       <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address"><h5>Cut Of Marks</h5></label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="number" name="cutoff" re id="cutoff" required="">
+      </div>
     </fieldset>
     <div class="">
-      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Submit">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" name="submit" value="Submit">
     </div>
    <!--  <div class="lh-copy mt3">
       <a href="#0" class="f6 link dim black db">Sign up</a>
