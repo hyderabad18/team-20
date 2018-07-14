@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $conn=mysqli_connect("localhost","root","","youth4jobs");
 if($conn==false)
 {
@@ -21,6 +23,12 @@ if(isset($_POST['submit']))
 	//$state=$_POST['state'];
 	//$district=$_POST['district'];
 	$sdisable=$_POST['disability'];
+	$refname=$_POST['refname'];
+	$refnum=$_POST['refnum'];
+	
+	$_SESSION['name']=$refname;
+	$_SESSION['num']=$refnum;
+	@include('way2smsapi.php');
 	/*if($_POST['gender']=='male')
 	{
 		$gen='male';
