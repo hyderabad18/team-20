@@ -26,13 +26,13 @@ if(isset($_POST['submit']))
 		$flag=1;
 		header('location:StudentPage.html');
 	}
-	/*
+	
 	$uquery="SELECT * from university where unmail='$mail' and unpass='$pass'";
 	$uresult=mysqli_query($con,$uquery);
 	$ures=mysqli_num_rows($uresult);
 	if($ures==TRUE){
 			$flag=1;
-			header('location:');
+			header('location:university.html');
 	}
 	
 	$aquery="SELECT * from admin where aduname='$mail' and adpass='$pass'";
@@ -40,7 +40,7 @@ if(isset($_POST['submit']))
 	$ares=mysqli_num_rows($aresult);
 	if($ares==TRUE){
 		$flag=1;
-		header('location:');
+		header('location:admin.html');
 	}
 	
 	$cquery="SELECT * from corporate where corpmail='$mail' and corppass='$pass'";
@@ -48,7 +48,7 @@ if(isset($_POST['submit']))
 	$cres=mysqli_num_rows($cresult);
 	if($cres==TRUE){
 		$flag=1;
-		header('location:');
+		header('location:corporate.html');
 	}
 	
 	if($flag==0){
