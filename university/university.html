@@ -56,9 +56,29 @@ function validate() {
       <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
     </ul>
   </div>
+ </nav>
 
-</nav>
+ <h1 align="center">Chose any of the below options to add details</h1>
 
+ <table align="center">
+
+  <tr>
+    <td>
+<main class="pa4 black-80">
+  <form class="measure center" name ="myform" target="_self" action="home.html" method="get" onsubmit="validate()">
+          <div class="mt3" align="center">
+        <label class="db fw6 lh-copy f6" ><h5>Upload</h5></label>
+        <input type="file" xlsx-model="excel" >
+      </div>
+    
+</td>
+<tr align="center">
+  <td>OR</td>
+</tr>
+<tr>
+    <td>
+
+      <div style="border: solid 1px #000000;">
   <main class="pa4 black-80">
   <form class="measure center" name ="myform" target="_self" action="home.html" method="get"  onsubmit="validate()">
     <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
@@ -84,10 +104,6 @@ function validate() {
         <label class="db fw6 lh-copy f6"><h5>Certificate</h5></label>
         <input type="file" name="certificate" accept="image/*">
       </div>
-       <div class="mt3">
-        <label class="db fw6 lh-copy f6" ><h5>Resume</h5></label>
-        <input type="file" name="resume" accept="image/*">
-      </div>
     </fieldset>
     <div class="">
       <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Submit">
@@ -98,6 +114,16 @@ function validate() {
     </div> -->
   </form>
 </main>
+</div>
+
+</td>
+</tr>
+
+
+   
+ </table>
+
+
 </body>
 </html>
 
