@@ -48,7 +48,7 @@ if(isset($_POST['submit']))
 	}
 	
 	if($flag==0){
-	  echo "<center><b>user is not valid.</b></center>";
+	  echo "<center><b>Invalid User.Please Try Again!!!</b></center>";
 	}
 
 }
