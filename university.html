@@ -9,8 +9,6 @@
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-      <link rel="stylesheet" href="css/style.css">
-
   <title>Front End</title>
   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
@@ -35,6 +33,8 @@ function validate() {
     padding:1rem;
     margin-top:0.5rem;
   }
+
+
 </style>
 </head>
 <body>
@@ -56,42 +56,61 @@ function validate() {
       <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
     </ul>
   </div>
+ </nav>
 
-</nav>
+ <h1 align="center">Chose any of the below options to add details</h1>
 
+ <table align="center">
+
+ <!-- <tr>
+    <td>
+<main class="pa4 black-80">
+  <form class="measure center" name ="myform"  method="post" onsubmit="validate()">
+          <div class="mt3" align="center">
+        <label class="db fw6 lh-copy f6" ><h5>Upload</h5></label>
+        <input type="file" name="excel" xlsx-model="excel" >
+      </div>
+	  <div class="">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" name="submit1" value="submit">
+    </div>
+	</form>
+    
+</td>
+<tr align="center">
+  <td>OR</td>
+</tr>
+<tr>-->
+    <td>
+
+      <div style="border: solid 1px #000000;">
   <main class="pa4 black-80">
-  <form class="measure center" name ="myform" action="corporate.php" method="post"  onsubmit="validate()">
+  <form class="measure center" name ="myform"   method="post"  onsubmit="validate()">
     <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
       <!-- <legend class="f4 fw6 ph0 mh0">Registration Form</legend>
       <hr> -->
       <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address"><h5>Vacancies</h5></label>
-        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="number" name="vacancies"  id="" required="">
+        <label class="db fw6 lh-copy f6"><h5>Name</h5></label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="name" name="name"  id="" required="">
       </div>
       <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address"><h5>Positions</h5></label>
-        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="position" re id="address" required=" ">
+        <label class="db fw6 lh-copy f6" ><h5>Email</h5></label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email" re id="address" required=" ">
       </div>
       <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address"><h5>SkillSet</h5></label>
-        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="skillset" re id="" required="">
+        <label class="db fw6 lh-copy f6" ><h5>Mobile number</h5></label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 " type="text" name="mobile" re id="" required="">
       </div>
       <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address"><h5>Disabilities</h5></label>
-        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="disabilities" re id="address" required="">
+        <label class="db fw6 lh-copy f6" ><h5>Skills</h5></label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 h4" type="text" name="skillset" re id="" required="">
       </div>
-       <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address"><h5>Location</h5></label>
-        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="location" re id="address" required="">
-      </div>
-	  </div>
-       <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address"><h5>Cut Of Marks</h5></label>
-        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="number" name="cutoff" re id="cutoff" required="">
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6"><h5>Certificate</h5></label>
+        <input type="file" name="certificate" accept="image/*">
       </div>
     </fieldset>
     <div class="">
-      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" name="submit" value="Submit">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" name="submit" value="submit">
     </div>
    <!--  <div class="lh-copy mt3">
       <a href="#0" class="f6 link dim black db">Sign up</a>
@@ -99,6 +118,16 @@ function validate() {
     </div> -->
   </form>
 </main>
+</div>
+
+</td>
+</tr>
+
+
+   
+ </table>
+
+
 </body>
 </html>
 
