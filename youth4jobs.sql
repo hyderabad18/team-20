@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 14, 2018 at 01:10 PM
+-- Generation Time: Jul 14, 2018 at 04:05 PM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -64,14 +64,6 @@ CREATE TABLE `student` (
   `spass` varchar(50) NOT NULL,
   `smail` varchar(100) NOT NULL,
   `smobile` varchar(13) NOT NULL,
-  `sdob` date NOT NULL,
-  `sgen` varchar(10) NOT NULL,
-  `saddress` varchar(400) DEFAULT NULL,
-  `sstate` varchar(30) DEFAULT NULL,
-  `sdistrict` varchar(30) DEFAULT NULL,
-  `sexperience` int(11) DEFAULT NULL,
-  `stechq` varchar(30) DEFAULT NULL,
-  `sacadq` varchar(30) DEFAULT NULL,
   `sskill` varchar(100) DEFAULT NULL,
   `ssector` varchar(100) DEFAULT NULL,
   `sdisability` varchar(100) NOT NULL
@@ -89,7 +81,8 @@ CREATE TABLE `university` (
   `unpass` varchar(50) NOT NULL,
   `unmail` varchar(100) NOT NULL,
   `unmobile` varchar(13) NOT NULL,
-  `unskillset` varchar(200) DEFAULT NULL
+  `unskillset` varchar(200) DEFAULT NULL,
+  `undisability` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -140,7 +133,7 @@ ALTER TABLE `corporate`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1002;
 
 --
 -- AUTO_INCREMENT for table `university`
