@@ -34,7 +34,7 @@ function validate() {
   <script type="text/javascript">app.js</script>
    -->
 	<main class="pa4 black-80">
-  <form class="measure center" name ="myform" target="_self" action="home.html" method="get"  onsubmit="validate()">
+  <form class="measure center" name ="myform"  method="post"  ">
     <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
       <legend class="f4 fw6 ph0 mh0">Registration Form</legend>
       <hr>
@@ -46,40 +46,40 @@ function validate() {
         <label class="db fw6 lh-copy f6" for="email-address">Phone No</label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="phone" re id="address">
       </div>
-      <div class="mt3">
+    <!--  <div class="mt3">
         <label class="db fw6 lh-copy f6" for="email-address">Date Of Birth</label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="date" name="dob" re id="address">
-      </div>
-      <div class="mt3 myradio">
+      </div>-->
+    <!-- <div class="mt3 myradio">
         <label class="db fw6 lh-copy f6" for="email-address">Gender</label>
         <input  type="radio" name="gender" value="male" re id="address" class=""><strong>Male</strong>
         <input  type="radio" name="gender" value="female" re class=""><strong>Female</strong>
-        <input  type="radio" name="gender" value="female" re class=""><strong>Others</strong>
-      </div>
+        <input  type="radio" name="gender" value="others" re class=""><strong>Others</strong>
+      </div>-->
       <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address">Academic Qualification</label>
-        <select class="w-100 myselect">
-  			<option value="Graduate">Graduate</option>
-  			<option value="Post Graduate">Post Graduate</option>
-  			<option value="Professional">Professional</option>
+      <label class="db fw6 lh-copy f6" for="email-address">Academic Qualification</label>
+        <select name="selectbox" class="w-100 myselect">
+  			<option name="g" value="Graduate">Graduate</option>
+  			<option name="pg" value="Institute">PostGraduate</option>
+  			<option name="pro" value="Corporate">Professional</option>
 		</select>
       </div>
       <div class="mt3">
         <label class="db fw6 lh-copy f6" for="email-address">Skills</label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="skills" re id="address">
       </div>
-       <div class="mt3">
+     <!--  <div class="mt3">
         <label class="db fw6 lh-copy f6" for="email-address">State</label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" required=""name="state" re id="address">
       </div>
        <div class="mt3">
         <label class="db fw6 lh-copy f6" for="email-address">District</label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" required="" name="district" re id="address">
-      </div>
+      </div>-->
 
       <div class="mt3">
         <label class="db fw6 lh-copy f6" for="email-address">Email</label>
-        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email"required=""  id="address">
+        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email" required=""  id="address">
       </div>
       <div class="mv3">
         <label class="db fw6 lh-copy f6" for="password">Password</label>
@@ -87,13 +87,13 @@ function validate() {
       </div>
       <div class="mv3">
         <label class="db fw6 lh-copy f6" for="password">Disability</label>
-        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" required="" name="password"  id="password">
+        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="disability" required="" name="disability"  id="password">
       </div>
 
       <label class="pa0 ma0 lh-copy f6 pointer"><input type="checkbox"> <strong>Remember me</strong></label>
     </fieldset>
     <div class="">
-      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Register">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" name="submit" value="submit">
     </div>
    <!--  <div class="lh-copy mt3">
       <a href="#0" class="f6 link dim black db">Sign up</a>
