@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html>
-<title>XXXX</title>
+<title>Student page</title>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="StuMain.css">
+
+<!--<body style="background-image:url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&h=350')">-->
 <body>
 
-<!-- Sidebar -->
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
-  <h3 class="w3-bar-item">Menu</h3>
+<nav class="navbar navbar-inverse">
+  <div class="container1">
+    <div class="navbar-header">
+      <a class="navbar-brand active" href="#">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="#">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Log Out</a></li>
+      <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+    </ul>
+  </div>
+
+</nav>
+
+<!-- Sidebar-->
+<div class="w3-sidebar w3-light-grey w3-bar-block mycolor" style="width:25%">
+  <h3 class="menuview"> Menu</h3>
   <a href="https://www.chanakyaiasacademy.com/study-material" class="w3-bar-item w3-button">Materials</a>
-  <a href="https://www.placementseason.com/collections" class="w3-bar-item w3-button">Mock Tests</a>
+  <a href="MockTest.html" class="w3-bar-item w3-button">Mock Tests</a>
   <a href="#" class="w3-bar-item w3-button">Question Bank</a>
   <a href="#" class="w3-bar-item w3-button">Updates</a>
-  <a href="#" class="w3-bar-item w3-button">Log out</a>
+
 </div>
 
+
 <!-- Page Content -->
-<div style="margin-left:25%">
+<div style="margin-left:15%">
 
 <div class="w3-container w3-teal">
   <h1>My Page</h1>
 </div>
 
-<img src="https://www.skees.org/wp-content/uploads/2016/02/Medha-graduates-Lucknow-India-2015.jpg" alt="Y4W" style="width:50%">
 
+<!-- Tab content--> 
+<div id="home" class="tabcontent">
+  <h3>Link 1</h3>
+  <p>Link to 1.</p>
+</div>
+
+<div id="about" class="tabcontent">
+  <h3>Link 2</h3>
+  <p>Link to 2.</p> 
+</div>
+
+
+<center><img src="https://www.skees.org/wp-content/uploads/2016/02/Medha-graduates-Lucknow-India-2015.jpg" alt="Y4W2" style="width:50%" align="middle"></center>
 <div class="w3-container">
 <h2>Career Enhancement</h2>
 <p>Here are your scores for the tests taken till now</p>
