@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front End</title>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
+
+ <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+      
+        <!-- Start Homebar -->
+        <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand active" href="file:///C:/Users/Dr%20C%20LAXMA%20REDDY/Desktop/home/Home.html">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="#">About</a></li>
+
+
+    </ul>
+   
+  </div>
+
+</nav>
+        
+
+
+  <script>
+function validate() {
+    var x = document.forms["myform"]["user"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+<style type="text/css">
+	.myselect{
+		font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    height:40px;border:1px solid black;
+	}
+	.mt3.myradio input,.mt3.myradio strong{
+		padding:1rem;
+		margin-top:0.5rem;
+	}
+</style>
+</head>
+<body>
+
+  <!-- <div id="particles-js"></div>
+  <script type="text/javascript">particles.js</script>
+  <script type="text/javascript">app.js</script>
+   -->
+	<main class="pa4 black-80">
+  <form class="measure center" name ="myform" target="_self" action="home.html" method="get"  onsubmit="validate()">
+    <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+      <legend class="f4 fw6 ph0 mh0">Registration Form</legend>
+      <hr>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Name</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="user"  id="" required="">
+      </div>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Phone No</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="phone" re id="address">
+      </div>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Date Of Birth</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="date" name="dob" re id="address">
+      </div>
+      <div class="mt3 myradio">
+        <label class="db fw6 lh-copy f6" for="email-address">Gender</label>
+        <input  type="radio" name="gender" value="male" re id="address" class=""><strong>Male</strong>
+        <input  type="radio" name="gender" value="female" re class=""><strong>Female</strong>
+        <input  type="radio" name="gender" value="female" re class=""><strong>Others</strong>
+      </div>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Academic Qualification</label>
+        <select class="w-100 myselect">
+  			<option value="Graduate">Graduate</option>
+  			<option value="Post Graduate">Post Graduate</option>
+  			<option value="Professional">Professional</option>
+		</select>
+      </div>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Skills</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="skills" re id="address">
+      </div>
+       <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">State</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" required=""name="state" re id="address">
+      </div>
+       <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">District</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" required="" name="district" re id="address">
+      </div>
+
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Email</label>
+        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email"required=""  id="address">
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="password">Password</label>
+        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" required="" name="password"  id="password">
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="password">Disability</label>
+        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" required="" name="password"  id="password">
+      </div>
+
+      <label class="pa0 ma0 lh-copy f6 pointer"><input type="checkbox"> <strong>Remember me</strong></label>
+    </fieldset>
+    <div class="">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Register">
+    </div>
+   <!--  <div class="lh-copy mt3">
+      <a href="#0" class="f6 link dim black db">Sign up</a>
+      <a href="#0" class="f6 link dim black db">Forgot your password?</a>
+    </div> -->
+  </form>
+</main>
+
+
+
+
+</body>
+</html>
