@@ -8,26 +8,22 @@ if($con==false)
 {
 	die("Error" . mysqli_connect_error());
 }
-echo "db connected";
+
 if(isset($_POST['submit']))
 {
-	echo 'posted';
 	$mail=$_POST['email'];
 	$pass=$_POST['password'];
 	$flag=0;
-	echo $mail;
-	echo 'took values';
 	$squery="SELECT * from student where smail='$mail' and spass='$pass'";
 	$sresult=mysqli_query($con,$squery);
 	$sres=mysqli_num_rows($sresult);
 	if($sres==TRUE)
 	{
-		echo "true";
 		$flag=1;
 		header('location:StudentPage.html');
 	}
 	
-	$uquery="SELECT * from university where unmail='$mail' and unpass='$pass'";
+	$uquery="SELECT * from university where smail='$mail' and unpass='$pass'";
 	$uresult=mysqli_query($con,$uquery);
 	$ures=mysqli_num_rows($uresult);
 	if($ures==TRUE){
@@ -43,7 +39,7 @@ if(isset($_POST['submit']))
 		header('location:admin.html');
 	}
 	
-	$cquery="SELECT * from corporate where corpmail='$mail' and corppass='$pass'";
+	$cquery="SELECT * from corporate where smail='$mail' and corppass='$pass'";
 	$cresult=mysqli_query($con,$cquery);
 	$cres=mysqli_num_rows($cresult);
 	if($cres==TRUE){
@@ -52,10 +48,9 @@ if(isset($_POST['submit']))
 	}
 	
 	if($flag==0){
-	  echo "<b>user is not valid.</b>";
-	  header('location:');
+	  echo "<center><b>user is not valid.</b></center>";
 	}
-	*/
+
 }
 
 
