@@ -11,9 +11,11 @@ if($con==false)
 
 if(isset($_POST['submit']))
 {
+	session_start();
 	$mail=$_POST['email'];
 	$pass=$_POST['password'];
 	$flag=0;
+	$_SESSION['mail']=$mail;
 	$squery="SELECT * from student where smail='$mail' and spass='$pass'";
 	$sresult=mysqli_query($con,$squery);
 	$sres=mysqli_num_rows($sresult);
@@ -48,7 +50,7 @@ if(isset($_POST['submit']))
 	}
 	
 	if($flag==0){
-	  echo "<center><b>Invalid User.Please Try Again!!!</b></center>";
+	  echo "<center><b>user is not valid.</b></center>";
 	}
 
 }
