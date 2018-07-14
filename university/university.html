@@ -62,25 +62,29 @@ function validate() {
 
  <table align="center">
 
-  <tr>
+ <!-- <tr>
     <td>
 <main class="pa4 black-80">
-  <form class="measure center" name ="myform" target="_self" action="home.html" method="get" onsubmit="validate()">
+  <form class="measure center" name ="myform"  method="post" onsubmit="validate()">
           <div class="mt3" align="center">
         <label class="db fw6 lh-copy f6" ><h5>Upload</h5></label>
-        <input type="file" xlsx-model="excel" >
+        <input type="file" name="excel" xlsx-model="excel" >
       </div>
+	  <div class="">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" name="submit1" value="submit">
+    </div>
+	</form>
     
 </td>
 <tr align="center">
   <td>OR</td>
 </tr>
-<tr>
+<tr>-->
     <td>
 
       <div style="border: solid 1px #000000;">
   <main class="pa4 black-80">
-  <form class="measure center" name ="myform" target="_self" action="home.html" method="get"  onsubmit="validate()">
+  <form class="measure center" name ="myform"   method="post"  onsubmit="validate()">
     <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
       <!-- <legend class="f4 fw6 ph0 mh0">Registration Form</legend>
       <hr> -->
@@ -106,7 +110,7 @@ function validate() {
       </div>
     </fieldset>
     <div class="">
-      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Submit">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" name="submit" value="submit">
     </div>
    <!--  <div class="lh-copy mt3">
       <a href="#0" class="f6 link dim black db">Sign up</a>

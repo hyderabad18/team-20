@@ -15,6 +15,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
 
 
 </head>
@@ -32,8 +56,8 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">View details <span class="caret"></span></a>
         <ul class=" dropdown-menu">
           <li><a href="student.html">Students</a></li>
-          <li><a href="corporation.html">Corporation</a></li>
-          <li><a href="university.html">University</a></li>
+          <li><a href="#">Corporation</a></li>
+          <li><a href="#">University</a></li>
         </ul>
       </li>
 
@@ -46,36 +70,50 @@
 
 </nav>
 <br/>
-
 <h1 align="center">Mapping of student to the company vacancy based on cutoff</h1>
 
-<br/>
-<br/>
-
-<form action="data.html" target="_self">
- <div class="col-xs-5">
-<div class="form-group">
-  <label for="sel1"><legend>Select cutoff from list:</legend></label>
-  <select class="form-control" id="mySelect">
-    <option id="first">90-100</option>
-    <option>80-90</option>
-    <option>70-90</option>
-    <option>60-70</option>
-  </select>
-
-</div>
-  <input type="submit" name="submit" value="submit">
-</div>
-
-</form>
 
 
+<table id="customers">
+  <tr>
+    <th>Student name</th>
+    <th>Sector</th>
+    <th>Company</th>
+  </tr>
+  <tr>
+    <td>Alfreds</td>
+    <td>IT</td>
+    <td>Microsoft</td>
+  </tr>
+  <tr>
+    <td>Barry</td>
+    <td>Banking</td>
+    <td>JPMC</td>
+  </tr>
+  <tr>
+    <td>Nikitha</td>
+    <td>Field Work</td>
+    <td>Amazon</td>
+
+  </tr>
+  <tr>
+    <td>Harbi</td>
+    <td>Security</td>
+    <td>BOA</td>
+  </tr>
+  <tr>
+    <td>Rahul</td>
+    <td>Teacher</td>
+    <td>Sabic</td>
+  </tr>
+
+</table>
 
 
-  
+
+
 
 </body>
-
 </html>
 
 
