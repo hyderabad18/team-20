@@ -33,6 +33,7 @@ if(isset($_POST['submit']))
 		$q="INSERT INTO SUBSTUDENT1(name,mail,mobile,skills,certificate) VALUES('$n','$mail','$mobile','$skills','$certificate')";
 		$r=mysqli_query($conn,$q);
 		
+		
 	}
 
 }

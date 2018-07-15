@@ -1,13 +1,12 @@
 <?php
+session_start();
 
-@include("way2smsapi.html");
-if(isset($_POST['submit']))
-{
+
 	$name=$_SESSION['name'];
 	$num=$_SESSION['num'];
 	$message='Hi ' . $name;
 
-	function curl_get_contents($url)
+	/*function curl_get_contents($url)
 	{
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -17,16 +16,26 @@ if(isset($_POST['submit']))
 		$data = curl_exec($ch);
 		curl_close($ch);
 		return $data;
+	}*/
+	
+	$json = json_decode(file_get_contents("https://smsapi.engineeringtgr.com/send/?Mobile=9494883379&Password=Harry123&Message=".urlencode($message)."&To=".urlencode($num)."&Key=myadanl3FvahoYAO4RKbgfSjCp8"),true);
+	if($_SESSION['val'] == 'login')
+	{
+		echo "LOGIN";
+		//header('location:login.php');
 	}
-	$json = json_decode(curl_get_contents("https://smsapi.engineeringtgr.com/send/?Mobile=xxx&Password=xxx&Message=".urlencode($message)."&To=".urlencode($num)."&Key=xxx"),true);
-	/*if ($json["status"]==="success") 
+	if($_SESSION['val'] == 'home')
+	{
+		//echo "HOME";
+		header('location:http://localhost:8080/team-20/Home.html');
+	}/*if ($json["status"]==="success") {
 		echo $json["msg"];
 		//your code when send success
 	}else{
 		echo $json["msg"];
 		//your code when not send
-	}
-	*/
-}
+	}*/
+	
+
 ?>
  

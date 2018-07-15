@@ -14,6 +14,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel .item {
+	height:300px;
+}
+.item img{
+	position:absolute;
+	top:0;
+	left:0;
+	min-height:300px;
+}</style>
 
 </head>
 
@@ -22,10 +32,10 @@
   <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand active" href="http://localhost:8080/team-20/home/Home.html">Home</a>
+      <a class="navbar-brand active" href="http://localhost:8080/team-20/Home.html">Home</a>
     </div>
     <ul class="nav navbar-nav">
-      <li ><a href="http://localhost:8080/team-20/home/About.html">About</a></li>
+      <li ><a href="http://localhost:8080/team-20/About.html">About</a></li>
 
 
     </ul>
@@ -37,7 +47,7 @@
 
 </nav>
 
-
+   <marquee><strong>Updates-</strong> TCS Recruiters for Post Graduates. Infosys Applications open now for under Graduates</marquee>
         
         <!-- End Homebar -->
 
@@ -56,21 +66,21 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="pic2.jpg" alt="Los Angeles" style="width:400%;">
+        <img src="pic2.jpg" alt="Los Angeles" width="100%" height="200px">
         <div class="carousel-caption">
           <h1>YOUTH4JOBS</h1>
         </div>
       </div>
 
       <div class="item">
-        <img src="pic3.jpg" alt="Chicago" style="width:400%;">
+        <img src="pic3.jpg" alt="Chicago" width="100%" height="200px">
         <div class="carousel-caption">
           <h1>YOUTH4JOBS</h1>
         </div>
       </div>
     
       <div class="item">
-        <img src="pic4.jpg" alt="New York" style="width:400%;">
+        <img src="pic4.jpg" alt="New York" width="100%" height="200px">
         <div class="carousel-caption" align="center">        
           <h1>YOUTH4JOBS</h1>
         </div>
@@ -142,12 +152,16 @@ The model is scalable and replicable. </p>
 
                     </div>
 
-                    <img src="pic1.jpg" alt="pic1" width="700" height="350">   
+                    <h6><center><iframe width="640" height="360" src="https://www.youtube.com/embed/IbJn2BCQRDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center></h6>
+
                 
                 </div>
             </div>
         </div>
         
+
+
+
         <!-- End about-->
         
         
@@ -157,7 +171,7 @@ The model is scalable and replicable. </p>
             <div class="container">
                 <div class="more">
 
-                <p> Mission:<br>Partnering with Stakeholders and vulnerable unreached communities to co-create pioneering solutions for an inclusive workplace</p>
+                <p> Mission:<br><ul><li>Partnering with Stakeholders and vulnerable unreached communities to co-create pioneering solutions for an inclusive workplace</li></ul></p>
                 <p><br>Objective:</p>
             
                 <p >
@@ -172,7 +186,27 @@ The model is scalable and replicable. </p>
             </div>
         </div>
         
-        
+        <div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(17.409167,78.448318);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  // Zoom to 9 when clicking on marker
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(12);
+    map.setCenter(marker.getPosition());
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7r8mm3Z6bxuakJpUGFE0wfiQCkV4pMjA&callback=myMap"></script>
+
         
         <!-- End optional -->
 
