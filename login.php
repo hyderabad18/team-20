@@ -13,7 +13,8 @@ if(isset($_POST['submit']))
 {
 	session_start();
 	$mail=$_POST['email'];
-	$pass=$_POST['password'];
+	$p=$_POST['password'];
+	$pass=md5($p);
 	$flag=0;
 	$_SESSION['mail']=$mail;
 	$squery="SELECT * from student where smail='$mail' and spass='$pass'";

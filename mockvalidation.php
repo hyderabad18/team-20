@@ -93,10 +93,11 @@ if(isset($_POST['submit']))
 	}
 	$s=$_SESSION['mail'];
 	$q="update student set mockscore='$c' where smail='$s'";
+	$_SESSION['val']=$c;
 	$r=mysqli_query($conn,$q);
 	//$res=mysqli_num_rows($r);*/
 	//echo $c;
-	header('location:StudentPage.html');
+	header('location:charts.php');
 }
 ?>
 	
