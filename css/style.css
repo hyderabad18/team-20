@@ -1,0 +1,278 @@
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+/*Start My Framwork*/
+
+.container{
+width:1000px;
+margin:auto;
+}
+
+.center{
+text-align:center;
+}
+
+.upper{
+text-transform:uppercase;
+}
+
+/*End My Framwork*/
+
+
+/*Start Homebar*/
+
+.navbar{
+background-color:rgb(29, 56, 98);
+height: 50px;
+margin-bottom:0px;
+overflow:hidden;
+}
+
+.navbar .home {
+font-size:14px;
+position:absolute;
+top:40px;
+color:#FFF;
+cursor:pointer;
+}
+
+.navbar .home span.first{
+color: #FFF;
+margin:20px;
+word-spacing:20px;
+
+}
+
+/*End Homebar*/ 
+
+/* Start Header*/
+
+.header{
+background:url("blue.jpg");
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+color:#FFF;
+overflow:hidden;
+margin-top: 20px;
+height: 500px;
+}
+
+.header .overlay{
+background: rgba(44, 55, 64, .5);
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+.header .listin{
+overflow:hidden;
+margin-top:90px;
+}
+
+
+
+.header .listin h1{
+font-size:70px;
+}
+
+.header .listin h1 span{
+font-weight:normal;
+}
+
+.header .listin h2{
+font-weight: normal;
+font-size: 25px;
+margin-top: 45px;
+margin-bottom: -0.5px;
+}
+
+
+/* End Header*/
+
+
+
+/* Start vision*/
+
+.need{
+margin-top:75px;
+}
+
+
+.need p{
+color:#969494;
+margin-top:30px;
+line-height:2;
+}
+
+/* End Quote*/
+
+/* Start Places */
+
+.advan .details{
+margin-top:50px;
+overflow:hidden;
+}
+
+.advan .details .first{
+margin-bottom: 75px;
+font-weight: normal;
+font-size: 35px;
+color: #6C6C6C;
+}
+
+
+.advan .details .more{
+width: 70%;
+float: left;
+overflow: hidden;
+margin-left: 15%;
+margin-bottom: 35px;
+}
+
+.advan .details .more h1{
+font-weight: normal;
+font-size: 17px;
+color: #3C3939;
+}
+
+.advan .details .more p{
+font-size:13px;
+color: 	#696969;
+line-height: 2;
+}
+
+.advan .details .more  h1 i{
+background-color:rgb(159, 198, 255);
+color: #FFF;
+font-size: 17px;
+width: 29px;
+height: 29px;
+border-radius: 22px;
+line-height: 29px;
+}
+
+.advan .details h1 i:hover{
+background-color:rgb(25, 68, 112);
+-webkit-transition:all .5s ease-in-out;
+-moz-transition:all .5s ease-in-out;
+-o-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+-webkit-transform:rotate(180deg);
+-moz-transform:rotate(180deg);
+-o-transform:rotate(180deg);
+transform:rotate(360deg);
+}
+
+
+
+.advan .details .more span{
+color: #0DB37A;
+margin-left: -45px;
+cursor:pointer;
+}
+
+.advan .details .more span i{
+font-size: 13px;
+margin: 3px;
+}
+
+/* End Places */
+
+/* Start optional*/
+
+.optional{
+
+/*
+background:url("adveng.jpg");
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+color:#FFF;
+overflow:hidden;
+margin-top: 20px;
+height: 600px;*/
+
+font-size:13px;
+color: 	#A9A9A9;
+line-height: 2;
+margin: 50px;
+
+
+}
+
+.optional.more {
+font-size:13px;
+color: 	#696969;
+line-height: 2;
+margin: 20px;
+
+}
+
+
+
+/* End optional*/
+
+
+
+
+
+/* Start Final*/
+
+.Final{
+background-color:#000;
+overflow:hidden;
+}
+
+.Final .home{
+color:#FFF;
+}
+
+.Final .home ul li{
+list-style: none;
+float: left;
+margin: 26px;
+font-size: 13px;
+margin-right: 0px;
+}
+
+.Final .home ul li:hover{
+border-bottom:1px solid rgb(249, 247, 255);
+cursor:pointer;
+-webkit-transition:all .5s ease-in-out;
+-moz-transition:all .5s ease-in-out;
+-o-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
+font-size:15px;
+}
+
+.Final .social{
+color:#FFF;
+}
+
+.Final .social ul li:hover{
+border-bottom:1px solid rgb(249, 247, 255);
+cursor:pointer;
+-webkit-transition:all .5s ease-in-out;
+-moz-transition:all .5s ease-in-out;
+-o-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
+font-size:15px;
+}
+
+.Final .social ul li{
+list-style: none;
+float: right;
+margin: 20px;
+list-style: none;
+margin: 26px;
+font-size: 16px;
+margin-right: 15px;
+}
+
