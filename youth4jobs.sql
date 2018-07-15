@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 14, 2018 at 10:33 PM
+-- Generation Time: Jul 14, 2018 at 10:39 PM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -75,6 +75,27 @@ INSERT INTO `corporate` (`corpid`, `corpname`, `corppass`, `smail`, `corpmobile`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `scores`
+--
+
+CREATE TABLE `scores` (
+  `scoreid` int(11) NOT NULL,
+  `sid` int(11) NOT NULL,
+  `mockscore` int(11) NOT NULL,
+  `pracscore` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `scores`
+--
+
+INSERT INTO `scores` (`scoreid`, `sid`, `mockscore`, `pracscore`) VALUES
+(2001, 1001, 80, 90),
+(2002, 1002, 85, 78);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `student`
 --
 
@@ -137,6 +158,13 @@ ALTER TABLE `corporate`
   ADD PRIMARY KEY (`corpid`);
 
 --
+-- Indexes for table `scores`
+--
+ALTER TABLE `scores`
+  ADD PRIMARY KEY (`scoreid`),
+  ADD KEY `sid` (`sid`);
+
+--
 -- Indexes for table `student`
 --
 ALTER TABLE `student`
@@ -165,6 +193,12 @@ ALTER TABLE `corporate`
   MODIFY `corpid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3003;
 
 --
+-- AUTO_INCREMENT for table `scores`
+--
+ALTER TABLE `scores`
+  MODIFY `scoreid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2003;
+
+--
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
@@ -175,6 +209,16 @@ ALTER TABLE `student`
 --
 ALTER TABLE `university`
   MODIFY `unid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5002;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `scores`
+--
+ALTER TABLE `scores`
+  ADD CONSTRAINT `scores_ibfk_1` FOREIGN KEY (`sid`) REFERENCES `student` (`sid`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
