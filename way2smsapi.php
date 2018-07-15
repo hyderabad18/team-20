@@ -18,7 +18,7 @@ session_start();
 		return $data;
 	}*/
 	
-	$json = json_decode(file_get_contents("https://smsapi.engineeringtgr.com/send/?Mobile=9494883379&Password=Harry123&Message=".urlencode($message)."&To=".urlencode($num)."&Key=myadanl3FvahoYAO4RKbgfSjCp8"),true);
+	$json = json_decode(file_get_contents("https://smsapi.engineeringtgr.com/send/?Mobile=#&Password=#&Message=".urlencode($message)."&To=".urlencode($num)."&Key=myadanl3FvahoYAO4RKbgfSjCp8"),true);
 	if($_SESSION['val'] == 'login')
 	{
 		echo "LOGIN";
