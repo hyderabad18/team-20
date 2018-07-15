@@ -30,7 +30,7 @@ if(isset($_POST['submit']))
 	$ures=mysqli_num_rows($uresult);
 	if($ures==TRUE){
 			$flag=1;
-			header('location:university.html');
+			header('location:substudent.php');
 	}
 	
 	$aquery="SELECT * from admin where aduname='$mail' and adpass='$pass'";
