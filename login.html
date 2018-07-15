@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Front End</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
+
+	<title>Particles</title>
+	<link rel="stylesheet" href="style.css">
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+ <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+
 </head>
+
 <body>
+      
+        <!-- Start Homebar -->
+        <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand active" href="http://localhost:8080/team-20/Home.html">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="http://localhost:8080/team-20/home/About.html">About</a></li>
+
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="http://localhost:8080/team-20/registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+     
+    </ul>
+  </div>
+
+</nav>
+
+  
+		<style>
+
+
 
   <nav class="navbar navbar-inverse">
   <div class="container">
@@ -26,6 +71,29 @@
 
 
 
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+
+
+</style>
+</head>
+<body >
+
+	<div id="particles-js"></div>
+
+	<script type="text/javascript" src="particles.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+
+<div >
+
+  
 	<main class="pa4 black-80">
   <form class="measure center" action="login.php" method="post">
     <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
@@ -38,12 +106,17 @@
         <label class="db fw6 lh-copy f2" for="password">Password</label>
         <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password">
       </div>
+
       <label class="pa1 ma0 lh-copy f4 pointer"><input type="checkbox"><strong> Remember me</strong></label>
+
+      <label class="pa0 ma0 lh-copy f6 pointer"><input type="checkbox"> Remember me</label>
+
     </fieldset>
     <div class="">
       <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f3 dib" type="submit" name="submit" value="submit">
     </div>
     <div class="lh-copy mt3">
+
       <a href="#0" class="f4 link dim black db"><strong>Sign up</strong></a>
       <a href="#0" class="f4 link dim black db"><strong>Forgot your password?</strong></a>
     </div>
@@ -53,5 +126,14 @@
 
 
 
+      <a href="#0" class="f6 link dim black db">Sign up</a>
+      <a href="#0" class="f6 link dim black db">Forgot your password?</a>
+    </div>
+  </form>
+</main>
+
+
+  
+</div>
 </body>
 </html>
